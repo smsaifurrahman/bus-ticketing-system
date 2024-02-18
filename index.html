@@ -69,7 +69,7 @@
             <h1 class="text-white font-bold text-3xl lg:text-5xl">End-to-End Travel with   </h1>
             <h1 class="font-bold text-5xl text-[#1DD100] pt-4">N - Paribahan</h1>
             <p class="text-white lg:px-44 px-2 py-4 ">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-            <button class="btn bg-[#1DD100] text-black font-bold border-none px-6 text-xl">Buy Tickets</button>
+            <button class="btn bg-[#1DD100] text-black font-bold border-none px-6 text-xl"> <a href="#sectionToScrollTo">Buy Tickets</a> </button>
            </div>
         </div>
      
@@ -118,15 +118,15 @@
           </div>
         </section>
         <!-- N-Paribahan section  -->
-        <section class="bg-[#F7F8F8]">
+        <section id="sectionToScrollTo" class="bg-[#F7F8F8]">
             <div class="text-center mb-4">
               <h2 class="text-3xl font-bold mb-2">N.H Paribahan</h2>
               <p class=" px-2 lg:px-72 ">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
             </div>
             <!-- Greenlin Paribahan container -->
-            <div class="container mx-auto mt-5 lg:mt-12 pt-5 lg:px-16 border-2 border-solid flex flex-col lg:flex-row ">
+            <div class="container mx-auto mt-5 lg:mt-12 pt-5 lg:px-16  flex flex-col lg:flex-row rounded-2xl">
 
-                <div class=" w-full lg:w-2/3">
+                <div class=" w-full lg:w-2/3 bg-white pt-3 pr-3 pl-5">
                     <div class="flex justify-between">
                       <div class="flex justify-between">
                         <div>
@@ -141,7 +141,7 @@
         
                     <button class="flex btn">
                       <img src="./images/seat-green.png" alt="">
-                      <p><span>40</span> Seats left</p>
+                      <p><span id="seat-left">28</span> Seats left</p>
                     </button>
                     </div>
                     <div class="bg-gray-100 mt-5 rounded-xl">
@@ -163,7 +163,7 @@
                 <!--  -->
 
                
-                <div class=" w-full lg:w-1/3 text-center flex flex-col items-center border-2 border-solid justify-center ">
+                <div class=" w-full lg:w-1/3 bg-white text-center flex flex-col items-center border-l-2 border-dotted justify-center ">
                   
                       <img src="./images/fare.png" alt="">
                       <h1 class="text-4xl font-bold">500 Taka</h1>
@@ -174,69 +174,133 @@
 
 
             <!-- Seclect your seat Container  -->
-            <div class=" container mx-auto lg:px-16 mt-5 lg:mt-12 flex lg:flex-row flex-col justify-between gap-5">
+            <div class=" container mx-auto lg:px-16 mt-5 lg:mt-12 flex lg:flex-row flex-col justify-between gap-5 bg-white pt-8">
               <!-- left side main div -->
-               <div class="w-3/5 border-2 border-solid">
+               <div class=" w-full lg:w-3/5 border-r-4 border-dotted ">
                   <h1 class=" text-xl font-bold">Select your Seat</h1>
                   <!-- Available and Selected main div -->
-                  <div class="flex justify-between mt-4 border-y-2 border-gray-300 border-dotted">
+                  <div class="flex justify-between mt-4 border-y-2  border-dotted px-12">
                     <div class="flex items-center">
                       <img src="./images/seat-gray.png" alt="">
                       <h3 class="pl-2">Available</h3>
                    </div>
                     <div class="flex items-center">
                       <img src="./images/seat-green.png" alt="">
-                      <h3 class="pl-2 text-[#1DD100]">Selected</h3>
+                      <h3 class="pl-2 text-[#1DD100] font-bold">Selected</h3>
                    </div>
                   </div>
-                  <div class="flex justify-end mt-4">
-                      <img src="./images/tabler-icon-steering-wheel.svg" alt="">
+                  <div class="flex justify-end mt-4 mb-4 mr-12 ">
+                      <button class="btn w-28"><img src="./images/tabler-icon-steering-wheel.svg" alt=""></button>
                   </div>
                   <!-- List of seats  -->
-      
+                  <div class="ml-4 lg:ml-8">
+                    <div class="flex flex-col">
+                      <!-- Row A -->
+                      <div class="flex mb-4">
+                        <span class="text-black font-bold py-2 px-4">A</span>
+                        <button id="A1" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded button-style button">A1</button>
+                        <button id="A2" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded ml-8 button-style button">A2</button>
+                        <button id="A3" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded ml-8 button-style button">A3</button>
+                        <button id="A4" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded ml-8 button-style button">A4</button>
+                      </div>
+                      
+                      <!-- Row B -->
+                      <div class="flex mb-4">
+                        <span class="text-black font-bold py-2 px-4">B</span>
+                        <button id="B1" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded button-style button">B1</button>
+                        <button id="B2" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded ml-8 button-style button">B2</button>
+                        <button id="B3" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded ml-8 button-style button">B3</button>
+                        <button id="B4" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded ml-8 button-style button">B4</button>
+                      </div>
+                      
+                      <!-- Row C -->
+                      <div class="flex mb-4">
+                        <span class="text-black font-bold py-2 px-4">C</span>
+                        <button id="C1" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded button-style button">C1</button>
+                        <button id="C2" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded ml-8 button-style button">C2</button>
+                        <button id="C3" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded ml-8 button-style button">C3</button>
+                        <button id="C4" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded ml-8 button-style button">C4</button>
+                      </div>
+                    
+                      <!-- Row D -->
+                      <div class="flex mb-4">
+                        <span class="text-black font-bold py-2 px-4">D</span>
+                        <button id="D1" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded button-style button">D1</button>
+                        <button id="D2" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded ml-8 button-style button">D2</button>
+                        <button id="D3" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded ml-8 button-style button">D3</button>
+                        <button id="D4" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded ml-8 button-style button">D4</button>
+                      </div>
+                    
+                      <!-- Row E -->
+                      <div class="flex mb-4">
+                        <span class="text-black font-bold py-2 px-4">E</span>
+                        <button id="E1" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded button-style button">E1</button>
+                        <button id="E2" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded ml-9 button-style button">E2</button>
+                        <button id="E3" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded ml-9 button-style button">E3</button>
+                        <button id="E4" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded ml-9 button-style button">E4</button>
+                      </div>
+                  
+                      <!-- Row F -->
+                      <div class="flex mb-4">
+                        <span class="text-black font-bold py-2 px-4">F</span>
+                        <button id="F1" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded button-style button">F1</button>
+                        <button id="F2" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded ml-9 button-style button">F2</button>
+                        <button id="F3" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded ml-9 button-style button">F3</button>
+                        <button id="F4" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded ml-9 button-style button">F4</button>
+                      </div>
+                  
+                      <!-- Row G -->
+                      <div class="flex mb-4">
+                        <span class="text-black font-bold py-2 px-4">G</span>
+                        <button id="G1" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded button-style button">G1</button>
+                        <button id="G2" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded ml-8 button-style button">G2</button>
+                        <button id="G3" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded ml-8 button-style button">G3</button>
+                        <button id="G4" class="bg-gray-200 text-black font-bold py-3 px-8 lg:px-12 rounded ml-8 button-style button">G4</button>
+                      </div>
+                    </div>
+                  </div>
+                  
 
 
-               </div>   
+              </div>   
                <!--Right side main div  -->
                <div class="w-full lg:w-2/5  ">
-                      <div class="bg-gray-100">
-                        <h1 class=" text-xl font-bold text-center">Select your Seat</h1>
+                <h1 class=" text-xl font-bold text-center mb-4">Select your Seat</h1>
+                      <div class="bg-gray-100 rounded-2xl">
+                        
                         <!--Table start  -->
                         <table class="min-w-full">
                           <thead>
                             <tr class="border-b-2 border-dotted">
-                              <th class="px-4 py-2 text-center">Seat</th>
+                              <th class="px-4 py-2 text-center">Seat <span id="selected-seat-count" class="inline-block bg-[#1DD100] text-white px-4  rounded-xl ">0</span></th>
                               <th class="px-4 py-2 text-center">Class</th>
-                              <th class="px-4 py-2 text-center">Price</th>
+                              <th id="ticket-price" class="px-4 py-2 text-center">Price</th>
                             </tr>
                           </thead>
-                          <tbody>
-                            <tr>
+                          <tbody id="price-table">
+                            <!-- <tr >
                               <td class=" px-4 py-2 text-center">A1</td>
                               <td class=" px-4 py-2 text-center">Business</td>
-                              <td class=" px-4 py-2 text-center">$100</td>
-                            </tr>
-                            <tr>
-                              <td class=" px-4 py-2 text-center">B2</td>
-                              <td class=" px-4 py-2 text-center">Economy</td>
-                              <td class=" px-4 py-2 text-center">$50</td>
-                            </tr>
+                              <td class=" px-4 py-2 text-center">100</td>
+                            </tr> -->
+                          
                           </tbody>
                          
                         
                         </table>
                         <div class="flex justify-between px-12 border-t-2 border-dotted mb-3 ">
                               <h3 class="font-bold">Total Price</h3>
-                              <p class="font-bold">BDT <span>0</span></p>
+                              <p class="font-bold">BDT <span id="total-price">0</span></p>
                         </div>
-                        <label class="input input-bordered flex items-center  lg:mx-12">
+                        <label id="coupon-field" class="input input-bordered flex items-center  lg:mx-12 disabled pointer-events-none opacity-50 ">
                           <input type="text" class="grow " placeholder="Have any coupon?" />
                           <button class="btn bg-[#1DD100]  text-white ">Apply</button>
                         </label>
                         <!-- grand total -->
-                        <div class="flex justify-between px-12 border-t-2 border-dotted my-3 ">
+                        <div class="flex justify-between px-12 border-t-2 border-dotted my-3 pb-5">
                           <h3 class="font-bold">Grand Total</h3>
-                          <p class="font-bold">BDT <span>0</span></p>
+                          <p class="font-bold">BDT <span id="grand-total" class="text-xl">0</span> </p>
+                          
                          </div>
                      
                       </div>  
@@ -249,19 +313,22 @@
                         </div>
                         <div class="mb-4">
                           <label for="input2" class="block text-sm font-bold mb-1">Phone Number*</label>
-                          <input type="text" id="input2" placeholder="Enter Your Phone number" class="w-full py-2 px-3 border rounded-lg">
+                          <input type="number" id="input2" placeholder="Enter Your Phone number" class="w-full py-2 px-3 border rounded-lg">
                         </div>
                         <div class="mb-4">
                           <label for="input3" class="block text-sm font-bold mb-1">Email ID</label>
                           <input type="text" id="input3" placeholder="Enter Your Email" class="w-full py-2 px-3 border rounded-lg">
                         </div>
-                        <button class="bg-[#1DD100]  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Next</button>
+                        <button id="nextButton" class="bg-[#1DD100]  text-white font-bold py-2 px-4 rounded disabled pointer-events-none opacity-50">Next</button>
+
+                        <!-- <button id="nextButton" class="bg-[#1DD100]  text-white font-bold py-2 px-4 rounded disabled">Next</button> -->
                       </div>
                </div>
             </div> 
 
             
         </section>
+    
           
     </main>
 
