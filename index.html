@@ -20,7 +20,7 @@
     </style>
 </head>
 <body class="font-raleway">
-    <header class="container mx-auto mt-5">
+<button></button>    <header class="container mx-auto mt-5 px-2 lg:px-16">
         <!-- Navigation bar -->
         <nav>
             <div class="navbar bg-base-100">
@@ -64,9 +64,9 @@
               </div>
         </nav>
         <!-- Banner section -->
-        <div class="bg-[url('./images/banner.png')] bg-cover bg-center h-[85vh] rounded-2xl">
-           <div class=" text-center pt-20 ">
-            <h1 class="text-white font-bold text-5xl">End-to-End Travel with   </h1>
+        <div class="bg-[url('./images/banner.png')] bg-cover bg-center h-[60vh] lg:h-[85vh] rounded-2xl">
+           <div class=" text-center pt-10 lg:pt-20 ">
+            <h1 class="text-white font-bold text-3xl lg:text-5xl">End-to-End Travel with   </h1>
             <h1 class="font-bold text-5xl text-[#1DD100] pt-4">N - Paribahan</h1>
             <p class="text-white lg:px-44 px-2 py-4 ">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
             <button class="btn bg-[#1DD100] text-black font-bold border-none px-6 text-xl">Buy Tickets</button>
@@ -74,43 +74,194 @@
         </div>
      
     </header>
-    <main class="container mx-auto mt-5">
-        <h1 class="text-black font-bold text-4xl text-center"  >Best offers for you</h1>
-        <div class="flex gap-4">
-            <div class="relative h-800 bg-[url('./images/coupon-bg2.png')] bg-cover bg-center text-center flex-1 flex justify-between h-40 px-10 rounded-2xl">
-                <!-- Background Image -->
-                <!-- <img src="./images/cupon-devider.png" class="absolute inset-0 w-full h-full object-cover" alt="Divider Image"> -->
-                <!-- Your content here -->
-              
-               <div class="flex flex-col items-center justify-center">
-                    <h2 class="text-black font-bold text-4xl">15% OFF</h2>
-                    <p class="font-bold text-black">on your next purchase</p>
-                    <p>use by January 2024</p>
-               </div>
-               <div  class="flex flex-col items-center justify-center">
-                    <h2 class="text-black font-bold text-4xl">NEW15</h2>
-                    <p>Coupon Code</p>
-               </div>
-    
+    <main >
+      <!-- Best offers for you section  -->
+        <section class="container mx-auto mt-5 lg:mt-12 px-2 lg:px-16">
+          <h1 class="text-black font-bold text-4xl text-center mb-10"  >Best offers for you</h1>
+          <div class="flex lg:flex-row flex-col  gap-4">
+              <div class="relative h-800 bg-[url('./images/coupon-bg2.png')] bg-cover bg-center text-center flex-1 flex justify-between h-40 px-10 rounded-2xl">
+                  <!-- Background Image -->
+                  <!-- <img src="./images/cupon-devider.png" class="absolute inset-0 w-full h-full object-cover" alt="Divider Image"> -->
+                  <!-- Your content here -->
+                
+                <div class="flex flex-row lg:flex-col items-center justify-center">
+                      <h2 class="text-black font-bold text-2xl lg:text-4xl">15% OFF</h2>
+                      <p class="font-bold text-black">on your next purchase</p>
+                      <p>use by January 2024</p>
+                </div>
+                <div  class="flex flex-col items-center justify-center">
+                      <h2 class="text-black font-bold text-2xl lg:text-4xl">NEW15</h2>
+                      <p>Coupon Code</p>
+                </div>
+      
+              </div>
+                <!-- coupon -2 -->
+                <div class="relative h-800 bg-[url('./images/coupon-bg.png')] bg-cover bg-center text-center flex-1 flex justify-between h-40 px-10 rounded-2xl">
+                  <!-- Background Image -->
+                  <!-- <img src="./images/cupon-devider.png" class="absolute inset-0 w-full h-full object-cover" alt="Divider Image"> -->
+                  <!-- Your content here -->
+                
+                    <div class="flex flex-col items-center justify-center">
+                          <h2 class="text-black font-boldtext-2xl lg:text-4xl">20% OFF</h2>
+                          <p class="font-bold text-black">on your next purchase</p>
+                          <p>use by January 2024</p>
+                    </div>
+                    <div  class="flex flex-col items-center justify-center">
+                          <h2 class="text-black font-bold text-2xl lg:text-4xl">Couple20</h2>
+                          <p>Coupon Code</p>
+                    </div>
+          
+              </div>
+          </div>
+          <div class="my-10 text-center ">
+            <button class="btn text-[#1DD100] border-solid border-1 border-[#1DD100]">See All offers</button>
+          </div>
+        </section>
+        <!-- N-Paribahan section  -->
+        <section class="bg-[#F7F8F8]">
+            <div class="text-center mb-4">
+              <h2 class="text-3xl font-bold mb-2">N.H Paribahan</h2>
+              <p class=" px-2 lg:px-72 ">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
             </div>
-              <!-- coupon -2 -->
-              <div class="relative h-800 bg-[url('./images/coupon-bg.png')] bg-cover bg-center text-center flex-1 flex justify-between h-40 px-10 rounded-2xl">
-                <!-- Background Image -->
-                <!-- <img src="./images/cupon-devider.png" class="absolute inset-0 w-full h-full object-cover" alt="Divider Image"> -->
-                <!-- Your content here -->
-              
-               <div class="flex flex-col items-center justify-center">
-                    <h2 class="text-black font-bold text-4xl">20% OFF</h2>
-                    <p class="font-bold text-black">on your next purchase</p>
-                    <p>use by January 2024</p>
-               </div>
-               <div  class="flex flex-col items-center justify-center">
-                    <h2 class="text-black font-bold text-4xl">Couple20</h2>
-                    <p>Coupon Code</p>
-               </div>
-    
+            <!-- Greenlin Paribahan container -->
+            <div class="container mx-auto mt-5 lg:mt-12 pt-5 lg:px-16 border-2 border-solid flex flex-col lg:flex-row ">
+
+                <div class=" w-full lg:w-2/3">
+                    <div class="flex justify-between">
+                      <div class="flex justify-between">
+                        <div>
+                          <img src="./images/bus-logo.png" alt="">
+                        </div>
+                        <div class="pl-2">
+                          <h1 class="font-bold text-2xl">Greenline Paribahan</h1>
+                          <p>Coach-009-WEB ! AC_Business</p>
+                        </div>
+                        
+                    </div>
+        
+                    <button class="flex btn">
+                      <img src="./images/seat-green.png" alt="">
+                      <p><span>40</span> Seats left</p>
+                    </button>
+                    </div>
+                    <div class="bg-gray-100 mt-5 rounded-xl">
+                          <div class="flex justify-between py-6 mx-4 border-b-2 border-dotted border-gray-400">
+                            <h3>Route</h3>
+                            <h3>Dhaka-Sylhet</h3>
+                         </div>
+                        <div class="flex justify-between py-6 mx-4 border-b-2 border-dotted border-gray-400">
+                            <h3>Departure Time</h3>
+                            <h3>9 00 PM</h3>
+                        </div>
+                        <div class="flex flex-col lg:flex-row justify-between py-6 px-4">
+                          <button class="btn bg-gray-200">Boarding Point - Laxmipur</button>
+                          <button  class="btn bg-gray-200">Dropping Point - Bogura</button>
+                          <button  class="btn bg-gray-200">Est. Time - 11 Hour</button>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+
+               
+                <div class=" w-full lg:w-1/3 text-center flex flex-col items-center border-2 border-solid justify-center ">
+                  
+                      <img src="./images/fare.png" alt="">
+                      <h1 class="text-4xl font-bold">500 Taka</h1>
+                      <p class="text-xl">Per Seat</p>
+                   
+                </div>
             </div>
-        </div>
+
+
+            <!-- Seclect your seat Container  -->
+            <div class=" container mx-auto lg:px-16 mt-5 lg:mt-12 flex lg:flex-row flex-col justify-between gap-5">
+              <!-- left side main div -->
+               <div class="w-3/5 border-2 border-solid">
+                  <h1 class=" text-xl font-bold">Select your Seat</h1>
+                  <!-- Available and Selected main div -->
+                  <div class="flex justify-between mt-4 border-y-2 border-gray-300 border-dotted">
+                    <div class="flex items-center">
+                      <img src="./images/seat-gray.png" alt="">
+                      <h3 class="pl-2">Available</h3>
+                   </div>
+                    <div class="flex items-center">
+                      <img src="./images/seat-green.png" alt="">
+                      <h3 class="pl-2 text-[#1DD100]">Selected</h3>
+                   </div>
+                  </div>
+                  <div class="flex justify-end mt-4">
+                      <img src="./images/tabler-icon-steering-wheel.svg" alt="">
+                  </div>
+                  <!-- List of seats  -->
+      
+
+
+               </div>   
+               <!--Right side main div  -->
+               <div class="w-full lg:w-2/5  ">
+                      <div class="bg-gray-100">
+                        <h1 class=" text-xl font-bold text-center">Select your Seat</h1>
+                        <!--Table start  -->
+                        <table class="min-w-full">
+                          <thead>
+                            <tr class="border-b-2 border-dotted">
+                              <th class="px-4 py-2 text-center">Seat</th>
+                              <th class="px-4 py-2 text-center">Class</th>
+                              <th class="px-4 py-2 text-center">Price</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class=" px-4 py-2 text-center">A1</td>
+                              <td class=" px-4 py-2 text-center">Business</td>
+                              <td class=" px-4 py-2 text-center">$100</td>
+                            </tr>
+                            <tr>
+                              <td class=" px-4 py-2 text-center">B2</td>
+                              <td class=" px-4 py-2 text-center">Economy</td>
+                              <td class=" px-4 py-2 text-center">$50</td>
+                            </tr>
+                          </tbody>
+                         
+                        
+                        </table>
+                        <div class="flex justify-between px-12 border-t-2 border-dotted mb-3 ">
+                              <h3 class="font-bold">Total Price</h3>
+                              <p class="font-bold">BDT <span>0</span></p>
+                        </div>
+                        <label class="input input-bordered flex items-center  lg:mx-12">
+                          <input type="text" class="grow " placeholder="Have any coupon?" />
+                          <button class="btn bg-[#1DD100]  text-white ">Apply</button>
+                        </label>
+                        <!-- grand total -->
+                        <div class="flex justify-between px-12 border-t-2 border-dotted my-3 ">
+                          <h3 class="font-bold">Grand Total</h3>
+                          <p class="font-bold">BDT <span>0</span></p>
+                         </div>
+                     
+                      </div>  
+                       <!--Passenger details section  -->
+                     
+                       <div class="flex flex-col">
+                        <div class="mb-4">
+                          <label for="input1" class="block text-sm font-bold mb-1">Passenger Name*</label>
+                          <input type="text" id="input1" placeholder="Enter Your Name" class="w-full py-2 px-3 border rounded-lg">
+                        </div>
+                        <div class="mb-4">
+                          <label for="input2" class="block text-sm font-bold mb-1">Phone Number*</label>
+                          <input type="text" id="input2" placeholder="Enter Your Phone number" class="w-full py-2 px-3 border rounded-lg">
+                        </div>
+                        <div class="mb-4">
+                          <label for="input3" class="block text-sm font-bold mb-1">Email ID</label>
+                          <input type="text" id="input3" placeholder="Enter Your Email" class="w-full py-2 px-3 border rounded-lg">
+                        </div>
+                        <button class="bg-[#1DD100]  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Next</button>
+                      </div>
+               </div>
+            </div> 
+
+            
+        </section>
           
     </main>
 
