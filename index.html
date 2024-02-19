@@ -64,8 +64,9 @@
               </div>
         </nav>
         <!-- Banner section -->
-        <div class="bg-[url('./images/banner.png')] bg-cover bg-center h-[60vh] lg:h-[85vh] rounded-2xl">
-           <div class=" text-center pt-10 lg:pt-20 ">
+        <div class="bg-[url('./images/banner.png')] bg-cover bg-center h-[60vh] lg:h-[85vh] rounded-2xl flex flex-col justify-center items-end">
+          
+           <div class=" text-center ">
             <h1 class="text-white font-bold text-3xl lg:text-5xl">End-to-End Travel with   </h1>
             <h1 class="font-bold text-5xl text-[#1DD100] pt-4">N - Paribahan</h1>
             <p class="text-white lg:px-44 px-2 py-4 ">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
@@ -118,13 +119,13 @@
           </div>
         </section>
         <!-- N-Paribahan section  -->
-        <section id="sectionToScrollTo" class="bg-[#F7F8F8]">
-            <div class="text-center mb-4">
+        <section id="sectionToScrollTo" class="bg-[#F7F8F8] border-t-2 border-[#1DD100] border-solid rounded-3xl">
+            <div class="text-center mb-12 pt-16">
               <h2 class="text-3xl font-bold mb-2">N.H Paribahan</h2>
               <p class=" px-2 lg:px-72 ">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
             </div>
             <!-- Greenlin Paribahan container -->
-            <div class="container mx-auto mt-5 lg:mt-12 pt-5 lg:px-16  flex flex-col lg:flex-row rounded-2xl">
+            <div class="container mx-auto mt-5 lg:mt-12 pt-5 lg:px-16  flex flex-col lg:flex-row bg-white rounded-3xl ">
 
                 <div class=" w-full lg:w-2/3 bg-white pt-3 pr-3 pl-5">
                     <div class="flex justify-between">
@@ -141,7 +142,7 @@
         
                     <button class="flex btn">
                       <img src="./images/seat-green.png" alt="">
-                      <p><span id="seat-left">28</span> Seats left</p>
+                      <p class="text-[#1DD100] "><span id="seat-left">28</span> Seats left</p>
                     </button>
                     </div>
                     <div class="bg-gray-100 mt-5 rounded-xl">
@@ -174,10 +175,10 @@
 
 
             <!-- Seclect your seat Container  -->
-            <div class=" container mx-auto lg:px-16 mt-5 lg:mt-12 flex lg:flex-row flex-col justify-between gap-5 bg-white pt-8">
+            <div class="container mx-auto lg:px-16 mt-5 lg:mt-12 flex lg:flex-row flex-col justify-between gap-5 bg-white pt-8 rounded-3xl">
               <!-- left side main div -->
                <div class=" w-full lg:w-3/5 border-r-4 border-dotted ">
-                  <h1 class=" text-xl font-bold">Select your Seat</h1>
+                  <h1 class=" text-xl font-bold pl-4">Select your Seat</h1>
                   <!-- Available and Selected main div -->
                   <div class="flex justify-between mt-4 border-y-2  border-dotted px-12">
                     <div class="flex items-center">
@@ -193,7 +194,7 @@
                       <button class="btn w-28"><img src="./images/tabler-icon-steering-wheel.svg" alt=""></button>
                   </div>
                   <!-- List of seats  -->
-                  <div class="ml-4 lg:ml-8">
+                  <div class="ml-1 lg:ml-6">
                     <div class="flex flex-col">
                       <!-- Row A -->
                       <div class="flex mb-4">
@@ -264,7 +265,7 @@
 
               </div>   
                <!--Right side main div  -->
-               <div class="w-full lg:w-2/5  ">
+               <div class="w-full lg:w-2/5 px-2 lg:px-0  ">
                 <h1 class=" text-xl font-bold text-center mb-4">Select your Seat</h1>
                       <div class="bg-gray-100 rounded-2xl">
                         
@@ -323,16 +324,36 @@
                           <label for="input3" class="block text-sm font-bold mb-1">Email ID</label>
                           <input type="text" id="input3" placeholder="Enter Your Email" class="w-full py-2 px-3 border rounded-lg">
                         </div>
-                        <button id="next-btn" class="bg-[#1DD100]  text-white font-bold py-2 px-4 rounded disabled pointer-events-none opacity-50">Next</button>
-
-                        <!-- <button id="nextButton" class="bg-[#1DD100]  text-white font-bold py-2 px-4 rounded disabled">Next</button> -->
+                        <label for="my_modal_6" id="next-btn" class="bg-[#1DD100] btn text-white font-bold py-2 px-4 hover:bg-[#1DD100] rounded disabled pointer-events-none opacity-50">Next</label>
+                        <!-- <label for="my_modal_6" class="btn">open modal</label> -->
                       </div>
                </div>
             </div> 
 
             
         </section>
-    
+        <!-- The button to open modal -->
+        
+          
+
+        
+          <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+          <div class="modal" role="dialog">
+            <div class="modal-box">
+              <div class=" flex flex-col pt-10 justify-center items-center text-center">
+                <img src="./images/success.png" alt="">
+                <h3 class="font-bold text-lg">Congratulation</h3>
+                <p class="py-4">Thank you for choosing our service</p>
+                <p class="py-4">Your purchase is successful </p>
+              </div>
+             
+              <div class="modal-action">
+                <label for="my_modal_6" class="btn">Close!</label>
+              </div>
+            </div>
+          </div>
+
+       
           
     </main>
 

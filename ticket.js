@@ -109,7 +109,12 @@ for(const button of buttons) {
                 const discountContainer = document.getElementById('discount-container');
                 discountContainer.appendChild(h3);
                 discountContainer.appendChild(p);
-                console.log(grandTotal);
+                
+
+                //setting new Grand total after discount
+                setInnerText('grand-total',newGrandTotal);
+                addClassNameById('coupon-field');
+
 
             
                 
@@ -134,10 +139,14 @@ for(const button of buttons) {
                 const discountContainer = document.getElementById('discount-container');
                 discountContainer.appendChild(h3);
                 discountContainer.appendChild(p);
-                console.log(grandTotal);
+
+                  //setting new Grand total after discount
+                  setInnerText('grand-total',newGrandTotal);  
+                  addClassNameById('coupon-field');
+                
             }
             else {
-                alert('please Enter a right Coupon code');
+                alert('Please Enter a valid Coupon code');
             }
         });
 
@@ -177,4 +186,9 @@ function getIdById(elementId) {
 function getInnerTextById (elementId) {
     const element = document.getElementById(elementId).innerText;
     return element;
+}
+
+function addClassNameById (elementId) {
+    const element = document.getElementById(elementId);
+    element.classList.add('hidden');
 }
